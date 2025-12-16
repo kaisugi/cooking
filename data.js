@@ -39,5 +39,20 @@ const cookingData = [
     "name": "すき焼きうどん",
     "url": "https://delishkitchen.tv/recipes/370947955068241042",
     "ingredients": ["うどん", "牛肉", "卵", "しいたけ", "春菊", "長ねぎ"]
+  },
+  {
+    "name": "たらのみぞれ煮",
+    "url": "https://delishkitchen.tv/recipes/218796425465561371",
+    "ingredients": ["タラ", "大根", "細ねぎ"]
+  },
+  {
+    "name": "えびと卵のオーロラ炒め",
+    "url": "https://delishkitchen.tv/recipes/215714405805982038",
+    "ingredients": ["むきえび", "卵"]
+  },
+  {
+    "name": "えびとアボカドのクリームパスタ",
+    "url": "https://delishkitchen.tv/recipes/172670688363020691",
+    "ingredients": ["スパゲッティ", "むきえび", "アボカド", "牛乳"]
   }
 ];
