@@ -24,5 +24,20 @@ const cookingData = [
     "name": "豚とキャベツの味噌煮込みうどん",
     "url": "https://www.kurashiru.com/recipes/2d84b7cb-ce30-4c0d-bd33-b1934f50a914",
     "ingredients": ["うどん", "豚ロース", "キャベツ", "長ねぎ", "にんにく"]
+  },
+  {
+    "name": "豚肉と小松菜の簡単煮込みうどん",
+    "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00005877/",
+    "ingredients": ["うどん", "豚肉", "玉ねぎ", "小松菜", "卵"]
+  },
+  {
+    "name": "納豆と小松菜の和風パスタ",
+    "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00051953/",
+    "ingredients": ["スパゲッティ", "小松菜", "納豆", "レモン", "のり"]
+  },
+  {
+    "name": "すき焼きうどん",
+    "url": "https://delishkitchen.tv/recipes/370947955068241042",
+    "ingredients": ["うどん", "牛肉", "卵", "しいたけ", "春菊", "長ねぎ"]
   }
 ];
