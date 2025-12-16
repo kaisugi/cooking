@@ -54,5 +54,20 @@ const cookingData = [
     "name": "えびとアボカドのクリームパスタ",
     "url": "https://delishkitchen.tv/recipes/172670688363020691",
     "ingredients": ["スパゲッティ", "むきえび", "アボカド", "牛乳"]
+  },
+  {
+    "name": "にんじんと白菜の卵炒め",
+    "url": "https://delishkitchen.tv/recipes/226429303569514765",
+    "ingredients": ["卵", "にんじん", "白菜", "かつお節", "細ねぎ"]
+  },
+  {
+    "name": "にんじんとしめじの中華卵スープ",
+    "url": "https://delishkitchen.tv/recipes/366627073969620031",
+    "ingredients": ["卵", "にんじん", "しめじ"]
+  },
+  {
+    "name": "野菜たっぷり味噌煮込みうどん",
+    "url": "https://recipe-navi.jp/recipes/43266",
+    "ingredients": ["豚バラ肉", "大根", "にんじん", "白菜", "しめじ", "長ねぎ", "うどん", "温泉卵"]
   }
 ];
