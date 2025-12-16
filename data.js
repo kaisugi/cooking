@@ -84,5 +84,20 @@ const cookingData = [
     "name": "甘酢ねぎだれの納豆チーズ焼き",
     "url": "https://delishkitchen.tv/recipes/159611893365866988",
     "ingredients": ["納豆", "ピザ用チーズ", "細ねぎ"]
+  },
+  {
+    "name": "卵みそそぼろ",
+    "url": "https://delishkitchen.tv/recipes/172002586738557420",
+    "ingredients": ["卵"]
+  },
+  {
+    "name": "じゃがいもとにんじんのベーコン炒め",
+    "url": "https://www.kyounoryouri.jp/recipe/4186_%E3%81%98%E3%82%83%E3%81%8C%E3%81%84%E3%82%82%E3%81%A8%E3%81%AB%E3%82%93%E3%81%98%E3%82%93%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B3%E3%83%B3%E7%82%92%E3%82%81.html",
+    "ingredients": ["じゃがいも", "にんじん", "ベーコン", "玉ねぎ"]
+  },
+  {
+    "name": "お手軽ジャーマンポテト",
+    "url": "https://delishkitchen.tv/recipes/487319397262688679",
+    "ingredients": ["じゃがいも", "玉ねぎ", "にんにく"]
   }
 ];
