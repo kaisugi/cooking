@@ -69,5 +69,20 @@ const cookingData = [
     "name": "野菜たっぷり味噌煮込みうどん",
     "url": "https://recipe-navi.jp/recipes/43266",
     "ingredients": ["豚バラ肉", "大根", "にんじん", "白菜", "しめじ", "長ねぎ", "うどん", "温泉卵"]
+  },
+  {
+    "name": "キャベツと玉ねぎの中華卵スープ",
+    "url": "https://delishkitchen.tv/recipes/366775745604747528",
+    "ingredients": ["卵", "キャベツ", "玉ねぎ"]
+  },
+  {
+    "name": "アボカドとじゃがいものガーリックチーズ焼き",
+    "url": "https://park.ajinomoto.co.jp/recipe/card/709401/",
+    "ingredients": ["アボカド", "じゃがいも", "ベーコン", "にんにく", "ピザ用チーズ"]
+  },
+  {
+    "name": "甘酢ねぎだれの納豆チーズ焼き",
+    "url": "https://delishkitchen.tv/recipes/159611893365866988",
+    "ingredients": ["納豆", "ピザ用チーズ", "細ねぎ"]
   }
 ];
