@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="関東圏在住のサラリーマン杉本による自炊記録集">
+    <meta name="description" content="杉本の自炊記録">
     <title>俺の自炊</title>
     <style>
         * {
@@ -193,6 +193,17 @@
             color: #15803d;
         }
 
+        .category-badge {
+            padding: 2px 8px;
+            background: transparent;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            color: #64748b;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+
         .no-results {
             text-align: center;
             padding: 60px 20px;
@@ -301,7 +312,7 @@
     <div class="container">
         <header>
             <h1>俺の自炊</h1>
-            <p class="description">関東圏在住のサラリーマン杉本による自炊記録集</p>
+            <p class="description">杉本の自炊記録</p>
         </header>
 
         <div class="filter-section">
@@ -377,16 +388,26 @@
             });
         }
 
+        // Shuffle array using Fisher-Yates algorithm
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
         // Filter cooking data
         function getFilteredData() {
             if (activeFilters.size === 0) {
-                return cookingData;
+                return shuffleArray(cookingData);
             }
-            return cookingData.filter(item => {
+            return shuffleArray(cookingData.filter(item => {
                 return Array.from(activeFilters).every(filter =>
                     item.ingredients.includes(filter)
                 );
-            });
+            }));
         }
 
         // Render cooking list
@@ -402,7 +423,7 @@
             listContainer.innerHTML = filteredData.map((item, index) => `
                 <div class="cooking-item" style="animation-delay: ${index * 0.05}s">
                     <div class="cooking-name">
-                        ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a>` : item.name}
+                        ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a>` : item.name}${item.category ? `<span class="category-badge">${item.category}</span>` : ''}
                     </div>
                     <div class="cooking-ingredients">
                         ${item.ingredients.map(ing => `
