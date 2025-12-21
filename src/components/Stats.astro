@@ -1,0 +1,10 @@
+---
+import { recipes, getAllIngredients } from '../data/recipes';
+
+const totalDishes = recipes.length;
+const totalIngredients = getAllIngredients(recipes).length;
+---
+
+<div class="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+  全{totalDishes}品 / {totalIngredients}種類の食材
+</div>

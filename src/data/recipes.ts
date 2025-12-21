@@ -1,5 +1,7 @@
+import type { Recipe } from '../types/recipe';
+
 // 自炊記録データ
-const cookingData = [
+export const recipes: Recipe[] = [
   {
     "name": "鮭のキムチちゃんちゃん焼き",
     "url": "https://delishkitchen.tv/recipes/297532154596820087",
@@ -181,3 +183,21 @@ const cookingData = [
     "category": "うどん"
   }
 ];
+
+/**
+ * すべてのユニークな食材を取得する
+ */
+export function getAllIngredients(recipeList: Recipe[]): string[] {
+  const ingredients = new Set<string>();
+  recipeList.forEach(recipe => {
+    recipe.ingredients.forEach(ing => ingredients.add(ing));
+  });
+  return Array.from(ingredients).sort();
+}
+
+/**
+ * レシピ数を取得する
+ */
+export function getRecipeCount(recipeList: Recipe[]): number {
+  return recipeList.length;
+}

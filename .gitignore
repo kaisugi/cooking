@@ -1,0 +1,23 @@
+# Astro build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Yarn
+yarn-error.log
+
+# Keep existing
+.claude/
