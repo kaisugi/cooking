@@ -36,30 +36,30 @@ const RecipeGrid = forwardRef<HTMLDivElement, RecipeGridProps>(({ recipes, activ
   }
 
   return (
-    <div ref={ref} class="space-y-4">
+    <div ref={ref} class="space-y-3 md:space-y-4">
       {displayRecipes.map((recipe, index) => (
         <div
           key={`${recipe.name}-${index}`}
-          class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-6 animate-fade-in-up"
+          class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-4 md:p-6 animate-fade-in-up"
           style={`animation-delay: ${index * 0.05}s`}
         >
-          <div class="flex items-center flex-wrap gap-2 mb-4">
+          <div class="flex items-center flex-wrap gap-2 mb-3 md:mb-4">
             {recipe.url ? (
               <a
                 href={recipe.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="recipe-link text-xl font-bold hover:text-accent-blue transition-colors"
+                class="recipe-link text-lg md:text-xl font-bold hover:text-accent-blue transition-colors"
               >
                 {recipe.name}
               </a>
             ) : (
-              <span class="text-xl font-bold text-text-dark">
+              <span class="text-lg md:text-xl font-bold text-text-dark">
                 {recipe.name}
               </span>
             )}
             {recipe.category && (
-              <span class="inline-block px-2 py-0.5 text-xs border border-gray-300 rounded text-gray-500 whitespace-nowrap">
+              <span class="inline-block px-1.5 py-0.5 md:px-2 text-[10px] md:text-xs border border-gray-300 rounded text-gray-500 whitespace-nowrap">
                 {recipe.category}
               </span>
             )}
