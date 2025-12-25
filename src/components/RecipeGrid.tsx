@@ -1,4 +1,4 @@
-import { useState, useEffect, forwardRef } from 'preact/compat';
+import { useState, useEffect } from 'preact/hooks';
 import type { Recipe } from '../types/recipe';
 import { shuffleArray } from '../utils/shuffle';
 
@@ -7,7 +7,7 @@ interface RecipeGridProps {
   activeFilters: Set<string>;
 }
 
-const RecipeGrid = forwardRef<HTMLDivElement, RecipeGridProps>(({ recipes, activeFilters }, ref) => {
+export default function RecipeGrid({ recipes, activeFilters }: RecipeGridProps) {
   const [displayRecipes, setDisplayRecipes] = useState<Recipe[]>([]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const RecipeGrid = forwardRef<HTMLDivElement, RecipeGridProps>(({ recipes, activ
 
   if (displayRecipes.length === 0 && activeFilters.size > 0) {
     return (
-      <div ref={ref} class="text-center py-12 text-text-muted">
+      <div class="text-center py-12 text-text-muted">
         <p class="text-lg">該当する料理が見つかりません</p>
         <p class="text-sm mt-2">フィルターの条件を変更してみてください</p>
       </div>
@@ -36,7 +36,7 @@ const RecipeGrid = forwardRef<HTMLDivElement, RecipeGridProps>(({ recipes, activ
   }
 
   return (
-    <div ref={ref} class="space-y-3 md:space-y-4">
+    <div class="space-y-3 md:space-y-4">
       {displayRecipes.map((recipe, index) => (
         <div
           key={`${recipe.name}-${index}`}
@@ -79,6 +79,4 @@ const RecipeGrid = forwardRef<HTMLDivElement, RecipeGridProps>(({ recipes, activ
       ))}
     </div>
   );
-});
-
-export default RecipeGrid;
+}
