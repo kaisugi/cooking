@@ -181,6 +181,30 @@ export const recipes: Recipe[] = [
     "url": "https://delishkitchen.tv/recipes/139064440132731379",
     "ingredients": ["うどん", "温泉卵", "納豆", "しらす", "かつお節", "細ねぎ"],
     "category": "うどん"
+  },
+  {
+    "name": "牡蠣と長ねぎの炙りすき焼き",
+    "url": "https://www.asahibeer.co.jp/enjoy/recipe/sp/recipe.psp.html?CODE=0000002509",
+    "ingredients": ["牡蠣", "長ねぎ", "卵"],
+    "category": "焼き物"
+  },
+  {
+    "name": "小松菜としいたけの中華うま煮",
+    "url": "https://daidokolog.pal-system.co.jp/recipe/908",
+    "ingredients": ["小松菜", "しいたけ", "にんにく"],
+    "category": "煮物"
+  },
+  {
+    "name": "さわらと小松菜の煮物",
+    "url": "https://delishkitchen.tv/recipes/173833078513336723",
+    "ingredients": ["さわら", "小松菜", "にんじん", "しょうが"],
+    "category": "煮物"
+  },
+  {
+    "name": "ふんわり卵の親子丼風おかず鍋",
+    "url": "https://www.kikkoman.co.jp/homecook/search/recipe/00051587/",
+    "ingredients": ["白菜", "しめじ", "鶏もも肉", "卵"],
+    "category": "煮物"
   }
 ];
 
