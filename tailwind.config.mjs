@@ -8,21 +8,6 @@ export default {
         'accent-green': '#22c55e',
         'text-dark': '#2c3e50',
         'text-muted': '#1e293b',
-      },
-      keyframes: {
-        fadeInUp: {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(20px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)'
-          }
-        }
-      },
-      animation: {
-        'fade-in-up': 'fadeInUp 0.6s ease-out'
       }
     },
   },

@@ -40,8 +40,7 @@ export default function RecipeGrid({ recipes, activeFilters }: RecipeGridProps) 
       {displayRecipes.map((recipe, index) => (
         <div
           key={`${recipe.name}-${index}`}
-          class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-4 md:p-6 animate-fade-in-up"
-          style={`animation-delay: ${index * 0.05}s`}
+          class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-4 md:p-6"
         >
           <div class="flex items-center flex-wrap gap-2 mb-3 md:mb-4">
             {recipe.url ? (

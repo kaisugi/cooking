@@ -29,7 +29,7 @@ function StickyFilterBar({ activeFilters, onRemove, onClearAll }: StickyFilterBa
   };
 
   return (
-    <div class="sticky top-0 z-30 bg-white/95 backdrop-blur-sm shadow-md rounded-xl p-3 mb-3 animate-fade-in-up">
+    <div class="sticky top-0 z-30 bg-white/95 backdrop-blur-sm shadow-md rounded-xl p-3 mb-3">
       <div class="flex items-center gap-2 flex-wrap">
         <span class="text-xs font-medium text-gray-600 whitespace-nowrap">
           選択中:
@@ -78,7 +78,7 @@ function CollapsibleFilterPanel({
   };
 
   return (
-    <div class="bg-white rounded-xl shadow-md mb-6 overflow-hidden animate-fade-in-up" style="animation-delay: 0.1s">
+    <div class="bg-white rounded-xl shadow-md mb-6 overflow-hidden">
       {/* Collapsible Header */}
       <button
         onClick={onToggle}
