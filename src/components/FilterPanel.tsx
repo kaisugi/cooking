@@ -110,7 +110,7 @@ function CollapsibleFilterPanel({
         style="overflow: hidden;"
         aria-hidden={!isExpanded}
       >
-        <div class="px-6 pb-6">
+        <div class="px-6 pt-3 pb-6">
           <div class="flex flex-wrap gap-2">
             {allIngredients.map((ingredient) => (
               <button
