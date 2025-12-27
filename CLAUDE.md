@@ -10,6 +10,7 @@
 - TypeScript（型安全性）
 - Preact（軽量UIライブラリ 3KB）
 - Tailwind CSS（ユーティリティファーストCSS）
+- ESLint + Prettier（コード品質とフォーマット）
 - GitHub Pages対応（GitHub Actions自動デプロイ）
 
 ## ファイル構成
@@ -21,7 +22,7 @@ cooking/
 │   │   ├── Header.astro         # 静的ヘッダー
 │   │   ├── Stats.astro          # 統計表示
 │   │   ├── FilterPanel.tsx      # 食材フィルター（Preact）
-│   │   ├── RecipeGrid.tsx       # レシピ表示（Preact）
+│   │   ├── RecipeGrid.tsx       # レシピ表示とシャッフル機能（Preact）
 │   │   └── MainApp.tsx          # メインアプリ（Preact）
 │   ├── layouts/
 │   │   └── Layout.astro         # ベースレイアウト
@@ -32,12 +33,15 @@ cooking/
 │   ├── types/
 │   │   └── recipe.ts            # 型定義
 │   └── utils/
-│       └── shuffle.ts           # シャッフル関数
+│       └── git.ts               # Git情報取得
 ├── public/
 │   └── ogp-image.png            # OGP画像
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml           # GitHub Actions設定
+├── eslint.config.js             # ESLint設定
+├── .prettierrc                  # Prettier設定
+├── .prettierignore              # Prettierの除外設定
 ├── astro.config.mjs             # Astro設定
 ├── tailwind.config.mjs          # Tailwind設定
 ├── tsconfig.json                # TypeScript設定
@@ -148,11 +152,41 @@ export interface Recipe {
 ```typescript
 // src/data/recipes.tsのrecipes配列に以下の形式で追加
 {
-  "name": "料理名",
-  "url": "https://example.com/recipe",  // リンクがない場合は ""
-  "ingredients": ["食材1", "食材2", "食材3"],  // 調味料を除く
-  "category": "カテゴリ"  // うどん、パスタ、スープ、炒め物、焼き物、煮物、副菜、リゾット、サラダなど
+    name: '料理名',
+    url: 'https://example.com/recipe',  // リンクがない場合は ''
+    ingredients: ['食材1', '食材2', '食材3'],  // 調味料を除く
+    category: 'カテゴリ'  // うどん、パスタ、スープ、炒め物、焼き物、煮物、副菜、リゾット、サラダなど
 }
+```
+
+**注意**: コードを追加した後は`yarn format`でフォーマットを整えてください。
+
+## コーディング規約
+
+### インデント
+
+- **半角スペース4つ** でインデント
+- ESLintとPrettierで自動的に強制される
+- タブ文字は使用しない
+
+### コードフォーマット
+
+```bash
+# コードを自動フォーマット
+yarn format
+
+# フォーマットチェックのみ（CI用）
+yarn format:check
+```
+
+### リント
+
+```bash
+# ESLintでコードをチェック
+yarn lint
+
+# ESLintで自動修正
+yarn lint:fix
 ```
 
 ## 開発環境のセットアップ
@@ -169,6 +203,12 @@ yarn build
 
 # ビルドのプレビュー
 yarn preview
+
+# コードフォーマット
+yarn format
+
+# リント
+yarn lint
 ```
 
 ## GitHub Pages へのデプロイ
