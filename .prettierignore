@@ -1,0 +1,13 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+.astro/
+
+# その他
+*.min.js
+*.min.css
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

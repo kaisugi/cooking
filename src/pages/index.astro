@@ -9,15 +9,11 @@ const allIngredients = getAllIngredients(recipes);
 ---
 
 <Layout title="俺の自炊" description="杉本の自炊記録 - 食材でフィルタリングできるレシピ集">
-  <Header />
+    <Header />
 
-  <div class="flex-1">
-    <MainApp
-      client:load
-      allIngredients={allIngredients}
-      recipes={recipes}
-    />
-  </div>
+    <div class="flex-1">
+        <MainApp client:load allIngredients={allIngredients} recipes={recipes} />
+    </div>
 
-  <Stats />
+    <Stats />
 </Layout>
