@@ -192,10 +192,10 @@ export const recipes: Recipe[] = [
         category: 'うどん',
     },
     {
-        name: '牡蠣と長ねぎの炙りすき焼き',
+        name: '鶏肉と長ネギの簡単すき煮',
         url: 'https://www.asahibeer.co.jp/enjoy/recipe/sp/recipe.psp.html?CODE=0000002509',
-        ingredients: ['牡蠣', '長ねぎ', '卵'],
-        category: '焼き物',
+        ingredients: ['鶏肉', '長ねぎ', '卵'],
+        category: '煮物',
     },
     {
         name: '小松菜としいたけの中華うま煮',
