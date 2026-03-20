@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo-192.png" alt="俺の自炊" width="128" />
+  <img src="public/logo.png" alt="俺の自炊" width="128" />
 </p>
 
 # 俺の自炊
