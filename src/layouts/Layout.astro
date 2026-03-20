@@ -18,6 +18,12 @@ const ogImage = new URL('/ogp-image.png', Astro.site);
         <link rel="canonical" href={canonicalURL} />
         <title>{title}</title>
 
+        <!-- PWA -->
+        <link rel="manifest" href="/cooking/manifest.json" />
+        <meta name="theme-color" content="#2563eb" />
+        <link rel="apple-touch-icon" href="/cooking/logo.png" />
+        <link rel="icon" type="image/png" href="/cooking/logo.png" />
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,3 +85,9 @@ const ogImage = new URL('/ogp-image.png', Astro.site);
         }
     }
 </style>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/cooking/sw.js');
+    }
+</script>
