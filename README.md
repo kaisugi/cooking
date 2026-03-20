@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="public/logo.png" alt="俺の自炊" width="128" />
-</p>
-
 # 俺の自炊
 
 杉本の自炊記録サイト。食材でフィルタリングできるレシピ集。
@@ -9,6 +5,10 @@
 [![Deploy to GitHub Pages](https://github.com/kaisugi/cooking/actions/workflows/deploy.yml/badge.svg)](https://github.com/kaisugi/cooking/actions/workflows/deploy.yml)
 
 🔗 **URL**: https://kaisugi.github.io/cooking/
+
+<p align="center">
+  <img src="public/logo-192.png" alt="俺の自炊" width="128" />
+</p>
 
 ## 技術スタック
 
