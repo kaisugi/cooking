@@ -334,6 +334,54 @@ export const recipes: Recipe[] = [
         ingredients: ['白菜', 'しめじ', '鶏もも肉', '卵'],
         category: '煮物',
     },
+    {
+        name: '白身魚と野菜の中華風甘酢あん',
+        url: 'https://oceans-nadia.com/user/484627/recipe/437571',
+        ingredients: ['タラ', 'なす', 'にんじん', 'ピーマン'],
+        category: '炒め物',
+    },
+    {
+        name: '丸ごとピーマンの照りたま炒め',
+        url: 'https://delishkitchen.tv/recipes/237893521191731585',
+        ingredients: ['鶏もも肉', '卵', 'ピーマン'],
+        category: '炒め物',
+    },
+    {
+        name: 'バター醤油香る和風きのこスパゲッティ',
+        url: 'https://park.ajinomoto.co.jp/recipe/card/708321/',
+        ingredients: ['スパゲッティ', 'しめじ', 'ベーコン', '細ねぎ', 'のり'],
+        category: 'パスタ',
+    },
+    {
+        name: 'ささっと作れる！鮭の甘辛卵とじ丼',
+        url: 'https://delishkitchen.tv/recipes/162383095436149228',
+        ingredients: ['ごはん', '生鮭', '卵', '玉ねぎ', 'しいたけ', '細ねぎ'],
+        category: '丼',
+    },
+    {
+        name: 'マヨネーズでコクうま♪ベーコンと玉ねぎのマヨたま炒め',
+        url: 'https://delishkitchen.tv/recipes/235912727472636201',
+        ingredients: ['ベーコン', '卵', '玉ねぎ', 'ブロッコリー'],
+        category: '炒め物',
+    },
+    {
+        name: '簡単 鶏塩のたまごうどん',
+        url: 'https://www.kurashiru.com/recipes/1a71c77f-092d-4e8c-ada7-5466c81456fb',
+        ingredients: ['うどん', '鶏もも肉', '卵', 'かつお節'],
+        category: 'うどん',
+    },
+    {
+        name: 'とろーり優しい！かきたまあんかけうどん',
+        url: 'https://delishkitchen.tv/recipes/183095988561379732',
+        ingredients: ['うどん', '卵', '細ねぎ', 'しょうが'],
+        category: 'うどん',
+    },
+    {
+        name: 'ご飯が進む！豚バラニラ玉炒め',
+        url: 'https://delishkitchen.tv/recipes/384418485242954080',
+        ingredients: ['豚バラ肉', '卵', 'にら'],
+        category: '炒め物',
+    },
 ];
 
 /**
