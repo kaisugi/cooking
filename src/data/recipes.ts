@@ -382,6 +382,18 @@ export const recipes: Recipe[] = [
         ingredients: ['豚バラ肉', '卵', 'にら'],
         category: '炒め物',
     },
+    {
+        name: '塩であっさり！ニラたっぷり塩チャプチェ',
+        url: 'https://delishkitchen.tv/recipes/202091316195098982',
+        ingredients: ['豚ひき肉', 'にら', 'もやし', '春雨'],
+        category: '炒め物',
+    },
+    {
+        name: '卵とわかめの中華風スープ',
+        url: 'https://delishkitchen.tv/recipes/206340837401953303',
+        ingredients: ['卵', 'わかめ'],
+        category: 'スープ',
+    },
 ];
 
 /**
