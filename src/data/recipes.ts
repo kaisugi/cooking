@@ -394,6 +394,72 @@ export const recipes: Recipe[] = [
         ingredients: ['卵', 'わかめ'],
         category: 'スープ',
     },
+    {
+        name: '白身魚とニラとしめじの中華炒め',
+        url: 'https://oceans-nadia.com/user/45109/recipe/410409',
+        ingredients: ['白身魚', 'にら', 'しめじ'],
+        category: '炒め物',
+    },
+    {
+        name: '卵とトマトの中華スープ',
+        url: 'https://www.kikkoman.co.jp/homecook/search/recipe/00001725/',
+        ingredients: ['トマト', '長ねぎ', 'しょうが', '卵'],
+        category: 'スープ',
+    },
+    {
+        name: 'ゴーヤチャンプルー',
+        url: 'https://www.kondatekun.com/coop-kinki/recipe.php?ID=10163',
+        ingredients: ['豚肉', 'ゴーヤ', '豆腐', 'えのき', '卵'],
+        category: '炒め物',
+    },
+    {
+        name: '野菜たっぷり春雨スープ',
+        url: 'https://www.kondatekun.com/coop-kinki/recipe.php?ID=10163',
+        ingredients: ['トマト', 'しめじ', '小松菜', '春雨', 'しょうが'],
+        category: 'スープ',
+    },
+    {
+        name: 'ゴーヤチャンプルー（Cook Do）',
+        url: 'https://www.ajinomoto.co.jp/cookdo/lineup/awase_017.html',
+        ingredients: ['ゴーヤ', '豆腐', '豚肉', '卵'],
+        category: '炒め物',
+    },
+    {
+        name: 'しらすと小松菜の和風クリームパスタ',
+        url: 'https://www.kurashiru.com/recipes/b90c9e11-bc4f-4e12-b073-596dc3244b69',
+        ingredients: ['スパゲッティ', '小松菜', 'しめじ', '牛乳', 'しらす'],
+        category: 'パスタ',
+    },
+    {
+        name: 'ホウレン草のみそ汁',
+        url: 'https://erecipe.woman.excite.co.jp/article/E1755498568443/',
+        ingredients: ['ほうれん草', '玉ねぎ'],
+        category: 'スープ',
+    },
+    {
+        name: 'ほうれん草のふわたまスープ',
+        url: 'https://oceans-nadia.com/user/384216/recipe/448740',
+        ingredients: ['ベーコン', 'ほうれん草', '卵'],
+        category: 'スープ',
+    },
+    {
+        name: 'わかめとたまごのかき卵汁',
+        url: 'https://delishkitchen.tv/recipes/183983789154763110',
+        ingredients: ['わかめ', '卵'],
+        category: 'スープ',
+    },
+    {
+        name: '鶏むね肉のみぞれ煮',
+        url: 'https://delishkitchen.tv/recipes/123239335653802431',
+        ingredients: ['鶏むね肉', '大根', '細ねぎ'],
+        category: '煮物',
+    },
+    {
+        name: '小松菜と豆腐の味噌汁',
+        url: 'https://delishkitchen.tv/recipes/373003781798887865',
+        ingredients: ['小松菜', '豆腐'],
+        category: 'スープ',
+    },
 ];
 
 /**
