@@ -484,6 +484,12 @@ export const recipes: Recipe[] = [
         ingredients: ['カレイ', 'しょうが'],
         category: '煮物',
     },
+    {
+        name: 'たらの煮つけ',
+        url: 'https://www.kikkoman.co.jp/homecook/search/recipe/00002492/',
+        ingredients: ['タラ', '春菊'],
+        category: '煮物',
+    },
 ];
 
 /**
