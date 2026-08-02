@@ -460,6 +460,30 @@ export const recipes: Recipe[] = [
         ingredients: ['小松菜', '豆腐'],
         category: 'スープ',
     },
+    {
+        name: '釜玉ねぎだれうどん',
+        url: 'https://delishkitchen.tv/recipes/285722781104996669',
+        ingredients: ['うどん', '卵', '長ねぎ', 'しょうが'],
+        category: 'うどん',
+    },
+    {
+        name: 'トマトとサバ缶のマヨわさ和え',
+        url: 'https://delishkitchen.tv/recipes/171995619076866451',
+        ingredients: ['ミニトマト', 'アボカド', 'サバ缶', 'にんにく'],
+        category: '副菜',
+    },
+    {
+        name: '豚肉と彩り野菜の炒め丼',
+        url: 'https://odori-clinic.com/column/yasai/',
+        ingredients: ['ごはん', '豚こま切れ肉', '小松菜', 'パプリカ', '卵', 'しょうが'],
+        category: '丼',
+    },
+    {
+        name: 'カレイの煮つけ',
+        url: 'https://www.senju-ge.jp/media/low-fodmap-fish',
+        ingredients: ['カレイ', 'しょうが'],
+        category: '煮物',
+    },
 ];
 
 /**
