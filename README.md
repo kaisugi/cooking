@@ -2,9 +2,7 @@
 
 杉本の自炊記録サイト。食材でフィルタリングできるレシピ集。
 
-[![Deploy to GitHub Pages](https://github.com/kaisugi/cooking/actions/workflows/deploy.yml/badge.svg)](https://github.com/kaisugi/cooking/actions/workflows/deploy.yml)
-
-🔗 **URL**: https://kaisugi.github.io/cooking/
+🔗 **URL**: https://cooking.kaisugi.me/
 
 <p align="center">
   <img src="public/logo-192.png" alt="俺の自炊" width="128" />
@@ -16,8 +14,7 @@
 - **TypeScript** - 型安全性
 - **Preact** - 軽量UIライブラリ（3KB）
 - **Tailwind CSS** - ユーティリティファーストCSS
-- **GitHub Pages** - ホスティング
-- **GitHub Actions** - 自動デプロイ
+- **Cloudflare Pages** - ホスティングと GitHub 連携による自動デプロイ
 
 ## 主な機能
 
@@ -37,7 +34,7 @@ yarn install
 
 # 開発サーバーの起動
 yarn dev
-# → http://localhost:4321/cooking
+# → http://localhost:4321/
 
 # プロダクションビルド
 yarn build
@@ -48,13 +45,33 @@ yarn preview
 
 ## デプロイ
 
-mainブランチへのpushで自動的にGitHub Pagesへデプロイされます。
+Cloudflare Pages で GitHub リポジトリ `kaisugi/cooking` を接続します。
+
+| 項目 | 設定値 |
+| --- | --- |
+| Production branch | `main` |
+| Build command | `yarn build` |
+| Build output directory | `dist` |
+| Root directory | `/` |
+| Environment variables | `NODE_VERSION=20`, `YARN_VERSION=1.22.22` |
+
+最初のデプロイ後、Pages プロジェクトの **Custom domains** から
+`cooking.kaisugi.me` を追加します。`kaisugi.me` の DNS が Cloudflare 管理なら
+CNAME レコードは自動作成されます。外部 DNS の場合は、`cooking` の CNAME を
+発行された `<project>.pages.dev` に向けます。DNS レコードの追加だけではなく、
+Pages 側へのドメイン登録も必要です。
+
+以後、`main` ブランチへの push で自動デプロイされます。
 
 ```bash
 git add .
 git commit -m "Update recipes"
 git push
 ```
+
+GitHub Pages の旧サイトは Cloudflare Pages の表示確認後に公開停止するか、
+旧 URL から新 URL へ誘導するページに切り替えます。GitHub Pages 用の
+GitHub Actions ワークフローは削除済みです。
 
 ## レシピの追加方法
 

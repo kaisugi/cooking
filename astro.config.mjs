@@ -4,8 +4,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kaisugi.github.io',
-  base: '/cooking',
+  site: 'https://cooking.kaisugi.me',
   integrations: [
     preact(),
     tailwind()

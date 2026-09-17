@@ -74,14 +74,19 @@
 - ESLintとPrettierで自動的に強制される
 - タブ文字は使用しない
 
-## GitHub Pages へのデプロイ
+## Cloudflare Pages へのデプロイ
 
-mainブランチにpushすると、GitHub Actionsが自動的にビルド・デプロイを実行します。
-`https://kaisugi.github.io/cooking/`でアクセス可能。
+`kaisugi/cooking` リポジトリを Cloudflare Pages に接続すると、main ブランチへの
+push で自動的にビルド・デプロイされます。公開先は
+`https://cooking.kaisugi.me/` です。
 
-### GitHub Pagesの設定（初回のみ）
+### Cloudflare Pages の設定（初回のみ）
 
-リポジトリのSettings > Pages > Source で「GitHub Actions」を選択。
+Production branch は `main`、Build command は `yarn build`、
+Build output directory は `dist`、環境変数 `NODE_VERSION` は `20`、
+`YARN_VERSION` は `1.22.22` に設定。
+最初のデプロイ後、Custom domains に `cooking.kaisugi.me` を追加します。
+詳細は README.md の「デプロイ」を参照。
 
 ## 今後の拡張案
 

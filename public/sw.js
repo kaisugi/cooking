@@ -1,10 +1,10 @@
-const CACHE_NAME = 'cooking-v1';
-const BASE = '/cooking';
+const CACHE_NAME = 'cooking-v2';
+const HOME = '/';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll([`${BASE}/`]);
+            return cache.addAll([HOME]);
         })
     );
     self.skipWaiting();
