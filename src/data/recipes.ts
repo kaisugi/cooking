@@ -490,6 +490,42 @@ export const recipes: Recipe[] = [
         ingredients: ['タラ', '春菊'],
         category: '煮物',
     },
+    {
+        name: 'さわらの煮付け',
+        url: 'https://delishkitchen.tv/recipes/169755349002224108',
+        ingredients: ['さわら', 'しょうが'],
+        category: '煮物',
+    },
+    {
+        name: '豚肉となすのさっぱり炒め',
+        url: 'https://www.mizkan.co.jp/ouchirecipe/recipe/?menu_id=14538',
+        ingredients: ['豚バラ肉', 'なす'],
+        category: '炒め物',
+    },
+    {
+        name: 'キャベツと油揚げのみそ汁',
+        url: 'https://park.ajinomoto.co.jp/recipe/card/703503/',
+        ingredients: ['キャベツ', '油揚げ'],
+        category: 'スープ',
+    },
+    {
+        name: 'カレイのみぞれ煮',
+        url: 'https://delishkitchen.tv/recipes/163981771283628524',
+        ingredients: ['カレイ', '大根'],
+        category: '煮物',
+    },
+    {
+        name: 'たらのトマト煮込み',
+        url: 'https://delishkitchen.tv/recipes/218797387638898971',
+        ingredients: ['タラ', 'にんにく', 'カットトマト缶'],
+        category: '煮物',
+    },
+    {
+        name: '豚肉とブロッコリーのオイスター炒め',
+        url: 'https://delishkitchen.tv/recipes/173829645777502611',
+        ingredients: ['豚こま切れ肉', 'ブロッコリー'],
+        category: '炒め物',
+    },
 ];
 
 /**
